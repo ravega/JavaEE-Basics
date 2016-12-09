@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/composite">
+<head>
+   <title>Message List</title>
+</head>
+
+<body>
+   <h:form>
+     <h3>Insert new Message:</h3>
+     <h:commandButton action="#{mView.moveToInsertMessage}"
+            value="Insert Message" />     
+   </h:form>
+   <br></br><br></br><br></br>
+   <h:form>
+      <h:dataTable value="#{mView.messages}" var="vmessage">
+         <h:column>    				
+            <f:facet name="header">Message</f:facet>    				
+            <h:inputText value="#{vmessage.message}" size="50" />            
+         </h:column>
+         <h:column>    				
+            <f:facet name="header">Delete</f:facet>    				
+            <h:commandButton action="#{mView.deleteMessage(vmessage)}"
+            value="Delete Message" />                        
+         </h:column>
+      </h:dataTable>
+   </h:form>  
+</body>
+</html>
