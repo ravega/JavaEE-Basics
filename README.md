@@ -6,10 +6,15 @@ Database name: tbdatabase
 Database Table: messages_t
 
 +---------+-------------+------+-----+---------+----------------+
+
 | Field   | Type        | Null | Key | Default | Extra          |
+
 +---------+-------------+------+-----+---------+----------------+
+
 | id      | int(5)      | NO   | PRI | NULL    | auto_increment |
+
 | message | varchar(50) | YES  |     | NULL    |                |
+
 +---------+-------------+------+-----+---------+----------------+
 
 
