@@ -12,4 +12,5 @@ Database Table: messages_t
 | message | varchar(50) | YES  |     | NULL    |                |
 +---------+-------------+------+-----+---------+----------------+
 
+
 Web access: http://localhost:8080/MView/home.xhtml
